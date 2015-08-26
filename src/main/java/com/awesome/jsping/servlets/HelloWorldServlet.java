@@ -13,7 +13,8 @@ public class HelloWorldServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 287766011062884926L;
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException { 
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		
 		getServletContext().getRequestDispatcher("/WEB-INF/hello.jsp").forward(request, response);
 	}
 }
